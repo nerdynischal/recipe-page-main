@@ -16,13 +16,16 @@ h2 {
 }
 
 h1 {
+  font-size: 42px;
   color: hsl(24, 5%, 18%);
 }
 h2 {
+  font-size: 32px;
   color: hsl(14, 45%, 36%);
 }
 
 hr {
+  margin-top: 32px;
   border-color: hsl(30, 54%, 90%, 0.15);
 }
 
@@ -68,6 +71,7 @@ ol li::marker {
 
 .prep h3 {
   margin: 0;
+  font-size: 24px;
   color: hsl(332, 51%, 32%);
 }
 
@@ -93,4 +97,33 @@ tr td:nth-child(2) {
 td {
   width: 50%;
   padding: 12px 52px;
+}
+
+@media only screen and (max-width: 400px) {
+  body,
+  main {
+    padding: 0px;
+    margin: 0px;
+    justify-content: left;
+  }
+
+  .main-card {
+    padding: 0px 24px 24px 24px;
+    max-width: 100%;
+    border-radius: 0px;
+  }
+
+  .main-card img {
+    width: 114%;
+    border-radius: 0px;
+    margin-left: -24px;
+  }
+
+  li {
+    padding-left: 16px;
+  }
+
+  h1 {
+    line-height: 1.2;
+  }
 }
